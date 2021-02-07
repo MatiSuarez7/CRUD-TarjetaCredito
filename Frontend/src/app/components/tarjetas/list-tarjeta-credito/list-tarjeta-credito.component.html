@@ -1,0 +1,22 @@
+<table mdbTable>
+  <thead class="black white-text">
+    <tr>
+      <th scope="col">Titular</th>
+      <th scope="col">Nro Tarjeta</th>
+      <th scope="col">Fecha Expiración</th>
+      <th scope="col">CVV</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr mdbTableCol *ngFor="let t of tarjetaService.list">
+      <th scope="row">{{t.titular}}</th>
+      <td>{{t.nroTarjeta}}</td>
+      <td>{{t.fechaExpiracion}}</td>
+      <td>{{t.cvv}}</td>
+      <td><button type="button" size="sm" mdbBtn class="m-0" color="indigo" (click)="editarTarjeta(t)">Editar<mdb-icon fas icon="edit" class="ml-1" aria-hidden="true"></mdb-icon></button></td>
+      <td><button type="button" size="sm" mdbBtn class="m-0" color="red" (click)="eliminarTarjeta(t.id)">Eliminar<mdb-icon fas icon="trash" class="ml-1" aria-hidden="true"></mdb-icon></button></td>
+    </tr>
+  </tbody>
+</table>

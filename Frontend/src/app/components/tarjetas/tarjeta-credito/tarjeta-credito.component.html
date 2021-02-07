@@ -1,0 +1,60 @@
+<!-- Material form register -->
+<mdb-card>
+
+  <mdb-card-header class="info-color white-text text-center py-3">
+    <h3>
+      <strong>Agregar</strong>
+    </h3>
+  </mdb-card-header>
+
+  <!--Card content-->
+  <mdb-card-body class="px-lg-5 mt-3">
+
+    <!-- Form -->
+    <form class="text-center" style="color: #757575;" [formGroup]="formTarjeta" (ngSubmit)="guardarTarjeta()">
+
+      <!-- E-mail -->
+      <div class="md-form mt-0">
+        <input type="text" class="form-control" mdbInput formControlName="titular">
+        <label>Titular</label>
+      </div>
+
+      <div class="form-row">
+        <div class="col">
+          <!-- First name -->
+          <div class="md-form">
+            <input type="text"  class="form-control" mdbInput formControlName="fechaExpiracion">
+            <label>Fecha Expiración</label>
+          </div>
+        </div>
+        <div class="col">
+          <!-- Last name -->
+          <div class="md-form">
+            <input type="text" class="form-control" mdbInput formControlName="nroTarjeta">
+            <label>Nro Tarjeta</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="col-md-5">
+          <!-- First name -->
+          <div class="md-form">
+            <input type="text" class="form-control" mdbInput  formControlName="cvv">
+            <label>CVV</label>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Sign up button -->
+      <button mdbBtn color="primary" outline="true"  block="true" class="my-4  z-depth-0" mdbWavesEffect
+        type="submit" [disabled]="formTarjeta.invalid">Aceptar</button>
+
+    </form>
+    <!-- Form -->
+
+  </mdb-card-body>
+
+</mdb-card>
+<!-- Material form register -->

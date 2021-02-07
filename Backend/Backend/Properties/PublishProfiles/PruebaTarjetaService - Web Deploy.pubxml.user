@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAOnKco32VcUSNjsM+WbJZFgAAAAACAAAAAAAQZgAAAAEAACAAAADPD/EdcMJm5tPHCwtpy457p8jnqOHNG3GyXXRbz188DAAAAAAOgAAAAAIAACAAAAATJUJJWLYxvY390N39Yo3/PUG3rxBaSzcf1agArb4hioAAAAAd5B0NkNUwRxnARyvwAzVG26g8/5LHLjRIHhSCYqb8T7Tr7pCU6FBx09LvFzNHXTr96SjuizNeFLKo6w+xGqIgmZ5ZROAD+bhPCmiDh8mcirzeJ/RyxdhCZpGHFVwxywniOAYD3c99VAaTjRU9sqWVxcBXp+4BL2KSuDnb4N0XW0AAAAC8EuLhR6CNA032QNLOoQHpx6656P30OrFhArTT1o/UTb20lbvxGWMr9V4FAzoRwmw3lpcaRcSRGkIT0rpsPsGd</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DevConnection">
+      <Value>Data Source=tcp:pruebatarjetaservicio.database.windows.net,1433%3bInitial Catalog=Backend_db%3bUser Id=matiassuarez%40pruebatarjetaservicio%3bPassword=%40Damaris270919</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="Backend.Models.BancoContext">
+      <Value>Data Source=tcp:pruebatarjetaservicio.database.windows.net,1433%3bInitial Catalog=Backend_db%3bUser Id=matiassuarez%40pruebatarjetaservicio%3bPassword=%40Damaris270919</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

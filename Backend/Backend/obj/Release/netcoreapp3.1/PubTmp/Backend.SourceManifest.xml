@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="E:\gusti\Desktop\Angular y .Net Core\AplicacionTarjetaCredito\Backend\Backend\obj\Release\netcoreapp3.1\PubTmp\Out\" />
+  <dbfullsql path="E:\gusti\Desktop\Angular y .Net Core\AplicacionTarjetaCredito\Backend\Backend\obj\Release\netcoreapp3.1\PubTmp\EFSQLScripts\Backend.Models.BancoContext.sql" />
+</sitemanifest>
